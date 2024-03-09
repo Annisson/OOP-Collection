@@ -17,6 +17,8 @@
             MyrtleInputError myrtleErr = new MyrtleInputError();
             errorList.Add(myrtleErr);
 
+            TrelawneyInputError trelawneyErr = new TrelawneyInputError();
+            errorList.Add(trelawneyErr);
 
 
             foreach (UserError error in errorList)
