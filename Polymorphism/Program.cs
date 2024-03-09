@@ -20,6 +20,9 @@
             TrelawneyInputError trelawneyErr = new TrelawneyInputError();
             errorList.Add(trelawneyErr);
 
+            LovegoodInputError lunaErr = new LovegoodInputError();
+            errorList.Add(lunaErr);
+
 
             foreach (UserError error in errorList)
             {
