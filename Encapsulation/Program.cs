@@ -8,14 +8,24 @@
 
             try
             {
-                Person person = new Person();
+                Person person = new Person("Harry", "Potter");
 
-                /*  //Testing age property and exception
-                Console.WriteLine("Age: ");
-                int.TryParse(Console.ReadLine(), out int age);
-                person.Age = age;
-                Console.WriteLine($"Age is set to: {person.Age}");
-                */
+                Console.WriteLine($"F: {person.FName}, L: {person.LName}");
+
+
+                //Testing age property and exception
+                //Console.WriteLine("Test: ");
+                //int.TryParse(Console.ReadLine(), out int nr);
+                //person.Age = nr;
+                //Console.WriteLine($"Age is set to: {person.Age}");
+
+
+                //Console.WriteLine("Name: ");
+
+                //person.FName = Console.ReadLine();
+                //Console.WriteLine($"Name is set to: {person.FName}");
+
+
 
             }
             catch (ArgumentException ex)
