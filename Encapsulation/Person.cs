@@ -54,11 +54,31 @@
 
         public double Height { 
             get { return height; } 
-            set { height = value; }
+            set 
+            {
+                if (value > 0)
+                {
+                    height = value;
+                }
+                else
+                {
+                    throw new ArgumentException($"\"{value}\" is not valid. Height must be greather than 0");
+                }
+            }
         }
         public double Weight { 
             get { return weight; }
-            set { weight = value; }
+            set 
+            {
+                if (value > 0)
+                {
+                    weight = value;
+                }
+                else
+                {
+                    throw new ArgumentException($"\"{value}\" is not valid. Weight must be greather than 0");
+                }
+            }
         }
 
         public Person(string fname, string lname)
