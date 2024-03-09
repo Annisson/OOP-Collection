@@ -14,6 +14,9 @@
             TextInputError textErr = new TextInputError();
             errorList.Add(textErr);
 
+            MyrtleInputError myrtleErr = new MyrtleInputError();
+            errorList.Add(myrtleErr);
+
 
 
             foreach (UserError error in errorList)
