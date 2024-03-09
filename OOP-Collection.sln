@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP-Collection", "OOP-Colle
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encapsulation", "Encapsulation\Encapsulation.csproj", "{229310E1-CEB4-4A9A-A4E1-D54E4D73DB76}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polymorphism", "Polymorphism\Polymorphism.csproj", "{841E02AA-1243-47A5-8E57-0A42D5C2EE01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{229310E1-CEB4-4A9A-A4E1-D54E4D73DB76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{229310E1-CEB4-4A9A-A4E1-D54E4D73DB76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{229310E1-CEB4-4A9A-A4E1-D54E4D73DB76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{841E02AA-1243-47A5-8E57-0A42D5C2EE01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{841E02AA-1243-47A5-8E57-0A42D5C2EE01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{841E02AA-1243-47A5-8E57-0A42D5C2EE01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{841E02AA-1243-47A5-8E57-0A42D5C2EE01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
