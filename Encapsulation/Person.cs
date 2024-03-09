@@ -10,11 +10,21 @@
 
         public int Age {
             get { return age; } 
-            set { age = value; }
+            set
+            {
+                if (value > 0)
+                {
+                    age = value;
+                }
+                else
+                {
+                    throw new ArgumentException($"{value} is not valid. Age must be greater then 0");
+                }
+            }
         }
         public string FName { 
             get {  return fName; } 
-            set {  fName = value; } 
+            set { fName = value; } 
         }
 
         public string LName { 
