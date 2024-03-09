@@ -7,7 +7,12 @@
         public double Weight { get; set; }
         public int CanIPetThatDawg { get; set; }
 
+        public abstract void DoSound();
 
+        protected Animal()
+        {
+
+        }
 
     }
 }
