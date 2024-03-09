@@ -40,7 +40,8 @@
             Age = age;
             Weight = weight;
             CanIPetThatDawg = pet;
-            IsPretty = true;
+            WillStealFood = food;
+            IsPretty = pretty;
         }
     }
 
