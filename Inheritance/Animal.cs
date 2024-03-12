@@ -19,7 +19,7 @@
 
         public virtual string Stats()
         {
-            return $"Namne: {Name}, Age: {Age}, Weight: {Weight}, Can I pet that dawg: {CanIPetThatDawg}";
+            return $"Name: {Name}, Age: {Age}years, Weight: {Weight}kg, Can I pet that dawg: {CanIPetThatDawg}";
         }
 
     }
