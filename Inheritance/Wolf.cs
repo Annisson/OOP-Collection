@@ -15,6 +15,10 @@
             CanIPetThatDawg = pet;
             DangerFloof = floof;
         }
+        public override string Stats()
+        {
+            return base.Stats() + $", Dangerous floofer? {(DangerFloof ? "Yah, big danger" : "No, it's just a pupper")}";
+        }
     }
 
     internal class Wolfman : Wolf, IPerson
