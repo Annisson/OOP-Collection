@@ -20,5 +20,10 @@
         {
             return base.Stats() + $", Number of teef: {NumberOfTeef}";
         }
+
+        public string Floofer()
+        {
+            return "I'm a cute floofer heh";
+        }
     }
 }
