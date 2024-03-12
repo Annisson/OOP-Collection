@@ -29,6 +29,10 @@
             foreach (var animal in animalsList)
             {
                 Console.WriteLine($"{animal.Stats()}");
+                // animal.Floofer();
+                // 17. F: Skapa en ny metod med valfritt namn  i klassen Dog som endast returnerar en valfri sträng.
+                // Kommer du åt den metoden frånAnimals listan? Varför inte?
+                // S: Klassen Animal innehåller inte metoden Floofer och kan därför inte komma åt den, endast subklassen Dog kommer åt den metoden.
 
                 if (animal is IPerson person)
                 {
@@ -41,6 +45,33 @@
                     animal.DoSound();
                 }
             }
+            // 13. F: Förklara vad det är som händer.
+            // S: Alla objects lagrade i Animal-listan skrivs ut med Stats-metoden.
+            // Stats-metoden skriver ut alla properties från basklassen Animal + eventuella unika properties som lagts till i varje subklass.
+            // If-satsen checkar sedan om varje enskilt objekt är av typen IPerson, om den är det kommer metoden Talk skrivas ut, annars kommer
+            // metoden DoSound skrivas ut.
+
+            foreach (var animal in animalsList)
+            {
+                if (animal is Dog dog)
+                {
+                    Console.WriteLine($"\nLil floofer: {animal.Stats()}, What? {dog.Floofer()}");
+
+                }
+            }
+
+            
+
+            List<Dog> dogsList = new List<Dog>();
+
+            //dogsList.Add(new Horse("Lilly", 10, 500, true, "Apples"));
+
+            // 9. F: Försök att lägga till en häst i listan av hundar. Varför fungerar inte det?
+            // S: Listan tar endast emot objects av typen Dog, och Horse är inte kopplat till Dog.
+
+            // 10. F: Vilken typ måste listan vara för att alla klasser skall kunna lagras tillsammans?
+            // S: Animal, eftersom alla djur-subklasser ärver från den så skulle det går att lagra de tillsammans.
+
         }
     }
 }
