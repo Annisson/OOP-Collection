@@ -19,29 +19,29 @@
 
     internal class Pelican : Bird
     {
-        public bool IsBigBirdy { get; set; }
-        public Pelican(string name, int age, double weight, bool pet, bool food, bool big) : base(name, age, weight, pet, food)
+        public int BeakLength { get; set; }
+        public Pelican(string name, int age, double weight, bool pet, bool food, int beak) : base(name, age, weight, pet, food)
         {
             Name = name;
             Age = age;
             Weight = weight;
             CanIPetThatDawg= pet;
             WillStealFood = food;
-            IsBigBirdy = big;
+            BeakLength = beak;
         }
     }
 
     internal class Flamingo : Bird
     {
-        public bool IsPretty { get; set; }
-        public Flamingo(string name, int age, double weight, bool pet, bool food, bool pretty) : base(name, age, weight, pet, food)
+        public string Color { get; set; }
+        public Flamingo(string name, int age, double weight, bool pet, bool food, string color) : base(name, age, weight, pet, food)
         {
             Name = name;
             Age = age;
             Weight = weight;
             CanIPetThatDawg = pet;
             WillStealFood = food;
-            IsPretty = pretty;
+            Color = color;
         }
     }
 
