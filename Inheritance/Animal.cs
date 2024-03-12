@@ -16,5 +16,11 @@
             Weight = weight;
             CanIPetThatDawg = pet;
         }
+
+        public virtual string Stats()
+        {
+            return $"Namne: {Name}, Age: {Age}, Weight: {Weight}, Can I pet that dawg: {CanIPetThatDawg}";
+        }
+
     }
 }
