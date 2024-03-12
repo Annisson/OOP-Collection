@@ -16,5 +16,9 @@
             CanIPetThatDawg = pet;
             LovesRain = love;
         }
+        public override string Stats()
+        {
+            return base.Stats() + $", Loves rain? {(LovesRain ? "Yes!" : "Nooo")}";
+        }
     }
 }
