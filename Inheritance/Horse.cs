@@ -16,6 +16,10 @@
             CanIPetThatDawg = pet;
             FaveSnack = snack;
         }
-        
+
+        public override string Stats()
+        {
+            return base.Stats() + $", Favorite snack: {FaveSnack}";
+        }
     }
 }
