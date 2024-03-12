@@ -15,5 +15,10 @@
             CanIPetThatDawg = pet;
             NumberOfTeef = teef;
         }
+
+        public override string Stats()
+        {
+            return base.Stats() + $", Number of teef: {NumberOfTeef}";
+        }
     }
 }
