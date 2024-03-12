@@ -15,5 +15,9 @@
             CanIPetThatDawg = pet;
             WinsAgainstCats = wins;
         }
+        public override string Stats()
+        {
+            return base.Stats() + $", Wins against cats: {WinsAgainstCats}";
+        }
     }
 }
